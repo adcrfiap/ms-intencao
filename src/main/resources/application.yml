@@ -8,9 +8,9 @@
 #        ddl-auto: update
 spring:
   datasource:
-    url: jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/d1jpgafv1ja9ut
-    username: pvdymcfqxszour
-    password: a9a04acaa530788ae878bfbefdad80f62fe7a587389c983f771793091c5c9c57
+    url: jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/dcn2mc7uks31gn
+    username: dimuhcbwptorkq
+    password: a2e5f1bba9bbdbe9337162b4ee00b73199c4fd394e0d8be3b56e4ce0921a0606
   jpa:
     hibernate:
       ddl-auto: update
