@@ -86,7 +86,9 @@ public class IntensaoServiceImpl implements IntensaoService {
     private void enviarIntensaoFila(Intensao intensao) throws JsonProcessingException {
         IntensaoResponseDTO intensaoResponseDTO = new IntensaoResponseDTO();
         Produto produto = produtoFeign.buscaProduto(intensao.getIdProduto());
+        System.out.println(">>>>>>>>>>>> " + produto.getModelo());
         Comprador comprador = compradorFeign.buscaComprador(intensao.getIdComprador());
+        System.out.println(">>>>>>>>>>>>" + comprador.getNome());
         intensaoResponseDTO.setProduto(produto);
         intensaoResponseDTO.setComprador(comprador);
         intensaoResponseDTO.setDescricao(intensao.getDescricao());

@@ -1,28 +1,16 @@
-#spring:
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/intensaobd
-#    username: root
-#    password: root
-#  jpa:
-#      hibernate:
-#        ddl-auto: update
+server:
+  port: 8082
+
 spring:
   datasource:
-    url: jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/dcn2mc7uks31gn
-    username: dimuhcbwptorkq
-    password: a2e5f1bba9bbdbe9337162b4ee00b73199c4fd394e0d8be3b56e4ce0921a0606
+    url: jdbc:postgresql://localhost:5432/intensao
+    username: admin
+    password: admin
   jpa:
     hibernate:
       ddl-auto: update
   rabbitmq:
-    host: rattlesnake.rmq.cloudamqp.com
-    username: lmmgtdet
-    password: UDlz-IlIELwOH5nLssBj6rx7JtrSWubH
-    virtualhost: lmmgtdet
-
-
-#  rabbitmq:
-#    host: localhost
-#    port: 5672
-#    username: guest
-#    password: admin
+    host: mqintensao
+    port: 5672
+    username: guest
+    password: admin
